@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+    <!-- font-awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+    <title>NHẬP THÔNG TIN CÁ NHÂN</title>
+</head>
+
+<body>
+    <div class="form-tt">
+        <h2>Enter your information</h2>
+        <form action="./config.php" method="post">
+            <div class="">
+                <table>
+                    <tr>
+                        <td align="left">Họ tên:</td>
+                        <td> <input type="text" name="name" placeholder="" required=""></td>
+                    </tr>
+                    <tr>
+                        <td align="left">Địa chỉ:</td>
+                        <td> <input type="text" name="address" placeholder="" required=""></td>
+                    </tr>
+                    <tr>
+                        <td align="left">Số điện thoại:</td>
+                        <td> <input type="text" name="telephone" placeholder="" required=""></td>
+                    </tr>
+                    <tr>
+                        <td align="left">Giới tính:</td>
+                        <td align="left"> <input type="radio" name="gender" value="Nam" placeholder="" required="">Nam
+                            <input type="radio" name="gender" value="Nữ" placeholder="" required="">Nữ
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="left">Quốc tịch:</td>
+                        <td>
+                            <select name="nationality" style="width:100%; height:27px">
+                                <option value="Việt Nam">Việt Nam</option>
+                                <option value="Trung Quốc">Trung Quốc</option>
+                                <option value="Nhật Bản">Nhật Bản</option>
+                                <option value="Hàn Quốc">Hàn Quốc</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="left">Các môn đã học:</td>
+                        <td>
+                            <input type="checkbox" name="sub1" value="PHP & MySQL">PHP & MySQL </input>
+                            <input type="checkbox" name="sub2" value="C#">C# </input>
+                            <input type="checkbox" name="sub3" value="XML">XML </input>
+                            <input type="checkbox" name="sub4" value="Python">Python </input>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="left">Ghi chú:</td>
+                        <td><textarea type="text" name="note" rows="5" cols="40"></textarea></td>
+                    </tr>
+                </table>
+            </div>
+            <div class="btninput d-flex justify-content-left">
+                <button> <input class="btn" type="submit" name="Gửi" value="Gửi"></button>
+                <button> <input class="btn" type="reset" name="Hủy" value="Hủy"></button>
+            </div>
+        </form>
+
+    </div>
+
+</body>
+
+</html>
